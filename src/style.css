@@ -1,0 +1,71 @@
+body, h1, input {
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#vue-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 20px 10px;
+    margin: 10px 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.newItem {
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    font-size: 16px;
+    padding-left: 10px;
+    color: rgb(166, 154, 154);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input:focus {
+    outline: none;
+    
+}
+
+#items {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn  {
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(162, 162, 207);
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.clear:hover {
+    background-color: rgb(189, 19, 19);
+}
