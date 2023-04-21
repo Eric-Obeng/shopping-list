@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping App || Home</title>
+        <link rel="icon" href="logo-coca-cola.png" />
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <link rel="stylesheet" href="./src/style.css">
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>{{ title || 'Welcome' }}</h1>
+            <div class="add-item-form">
+                <input v-model,lazy="newItem" type="text" placeholder="Add an item" class="newItem"><br>
+                <br>
+                <div id="controls">
+                    <button v-on:click="items.push({id: items.length + 1, label: newItem})" 
+                        class="btn btn-primary">
+                        Save Item
+                    </button>
+                    <button v-on:click="items.pop({id: items.length, label: newItem})" 
+                        class="btn btn-primary clear">
+                        Clear Item
+                </button>
+                </div>
+                
+                <br>
+                <br>
+
+                <label>
+                    <input type="checkbox" v-model="newItemHighPriority">
+                    High Priority
+                </label>
+                
+                
+            </div>
+            <br>
+
+            <ol id="items">
+                <li v-for="item in items" :key="item.id">
+                    {{ item.label }}
+                </li>
+            </ol>
+            
+        </div>
+
+        <script>
+            
+        </script>
+        <script src="./src/main.js"></script>
+    </body>
+</html> 

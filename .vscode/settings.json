@@ -1,0 +1,5 @@
+{
+    "liveServer.settings.port": 5501,
+    "vue.features.codeActions.savingTimeLimit": 800,
+    "vue.features.codeActions.enable": false
+}
